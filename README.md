@@ -29,15 +29,16 @@ The solution: a centralized, analytics-ready data system that integrates all ope
 ---
 
 ## Solution Overview
-The initiative was structured around two complementary modules — **_Revenge of the Seat_ (Data Warehouse)** and **_Return of the Jet High_ (Analytics Engine)** — forming a complete airline intelligence ecosystem.  
+The initiative was structured around three complementary modules — **_Revenge of the Seat_ (Data Warehouse)**, **_Return of the Jet High_ (Analytics Engine)** and **_The Rise of the Single Source_ (Analytics Engineering)** — each delivering a specific layer of business value and forming a complete airline intelligence ecosystem.  
 Together, they deliver a robust end-to-end architecture that consolidates operational data and transforms it into business-ready insights for strategic decision-making.
 
 | Module | Description | Business Value |
 |--------|--------------|----------------|
 | **Revenge of the Seat (Data Warehouse)** | A fully normalized **relational data warehouse** designed with Merise methodology, integrating flights, aircraft, passengers, and bookings under strict referential integrity. | Establishes a **single source of truth** for all operational and financial data, enabling accurate reporting, compliance, and cross-departmental alignment.|
 | **Return of the Jet High (Analytics Engine)** | A **SQL-based analytics layer** delivering KPIs on route profitability, fleet utilization, delay performance, and customer segmentation. | Converts raw operational metrics into **actionable insights** that drive pricing, scheduling, and strategic optimization decisions. |
+| **The Rise of the Single Source (Analytics Engineering)** | A **modern transformation layer using dbt**, automating complex data modeling while enforcing rigorous data quality tests and documentation. | Ensures **data reliability and certification**. It provides a scalable framework to industrialize KPIs and guarantee that executives work with trusted, verified data. |
 
-By combining both modules, the platform bridges the gap between **data operations and business strategy**, empowering executives to monitor performance, identify opportunities, and make faster, evidence-based decisions.  
+By combining these modules, the platform bridges the gap between **data operations and business strategy**, empowering executives to monitor performance, identify opportunities, and make faster, evidence-based decisions.  
 The result is an end-to-end data ecosystem that transforms flight data into **strategic intelligence**, ensuring decision-makers have the insights they need — when they need them.
 
 ---
@@ -48,6 +49,7 @@ The result is an end-to-end data ecosystem that transforms flight data into **st
 - **Delay analytics** quantifying the direct and indirect cost of disruptions.  
 - **Customer intelligence** models supporting retention, loyalty, and premium targeting.  
 - **Executive-ready dashboards** aligned with operational and financial KPIs.  
+- **Data Trust & Certification**: 60+ automated quality tests ensuring the accuracy of financial and operational reporting.
 
 The platform enables leadership teams to:
 - Prioritize **high-margin routes** and streamline underperforming ones.  
@@ -79,16 +81,15 @@ Each indicator helps assess both **operational efficiency** and **financial perf
 
 These insights support **executive decision-making** in areas such as route optimization, fleet deployment, and pricing strategy — demonstrating how the platform transforms operational data into **strategic intelligence at scale**.
 
-
 ---
 
 ## Technologies Used
-**Microsoft SQL Server** • **Visual Studio Code** • **Merise (Data Modeling)** 
+**Microsoft SQL Server** • **PostgreSQL (Neon.tech)** • **dbt Cloud** • **Visual Studio Code** • **Merise (Data Modeling)**  
 
-The project leverages the core SQL ecosystem to ensure robust data modeling, manipulation, and analysis:  
-- **DDL (Data Definition Language)** – Structured and created normalized relational tables with referential integrity 
-- **DML (Data Manipulation Language)** – Populated and maintained large datasets representing airline operations and passenger activity.  
-- **DQL (Data Query Language)** – Developed advanced analytical queries and KPIs supporting business and operational decision-making. 
+The project leverages a modern data stack to ensure robust data modeling, transformation, and analysis:  
+- **DDL & DML** – Structured relational tables with referential integrity and populated large operational datasets.
+- **Analytics Engineering (dbt)** – Automated the transformation layer, establishing a Medallion Architecture (Staging, Intermediate, Marts) with built-in data validation.
+- **DQL (Data Query Language)** – Developed advanced analytical queries and KPIs supporting business and operational decision-making.
 
 ---
 
@@ -98,14 +99,15 @@ The project leverages the core SQL ecosystem to ensure robust data modeling, man
 - Deployment of **Power BI executive dashboards** consolidating financial, operational, and customer insights for data-driven decision-making.  
 - Expansion of the analytical framework to **multi-airline alliances and partner networks** for cross-company benchmarking.  
 - Implementation of **DCL (Data Control Language)** and **TCL (Transaction Control Language)** features to strengthen data governance, access control, and transactional consistency in future system iterations.
-
+ 
 ---
 
 ## Summary
 **Airline Performance Analytics** demonstrates how operational data can be leveraged to drive strategic and financial impact.  
-By combining **strong data governance**, **advanced SQL analytics**, and **business-oriented KPIs**, the platform empowers airlines to:
+By combining **strong data governance**, **advanced SQL analytics**, and **modern Analytics Engineering**, the platform empowers airlines to:
 - Optimize **revenue and operational performance**.  
 - Anticipate **risks and inefficiencies**.  
-- Make **informed, data-backed decisions** at every level of the organization.  
+- Make **informed, data-backed decisions** based on a certified Single Source of Truth.  
+
 
 > *Because in aviation, just like in data, performance isn’t only about flying, it’s about knowing where and how to soar.*
